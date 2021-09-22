@@ -1,5 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://app.travis-ci.com/jyotirmay-kumar/data-structures.svg?branch=main)](https://app.travis-ci.com/jyotirmay-kumar/data-structures)
+[![codecov](https://codecov.io/gh/jyotirmay-kumar/data-structures/branch/main/graph/badge.svg?token=CM53690EWW)](https://codecov.io/gh/jyotirmay-kumar/data-structures)
 
 
 # Data-Structures
