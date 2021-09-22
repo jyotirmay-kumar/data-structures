@@ -9,7 +9,7 @@ public class ArrayStack<T> implements Stack<T> {
 	
 	private int size;
 	
-	private T[] stack;
+	private final T[] stack;
 	
 	public ArrayStack(int length) {
 		stack =  (T[]) new Object[length];

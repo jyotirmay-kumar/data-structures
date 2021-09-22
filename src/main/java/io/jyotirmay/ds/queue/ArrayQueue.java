@@ -7,7 +7,7 @@ public class ArrayQueue<T> implements Queue<T> {
 
 	private static final long serialVersionUID = 6437039201130455023L;
 
-	private T[] queue;
+	private final T[] queue;
 
 	private int size;
 

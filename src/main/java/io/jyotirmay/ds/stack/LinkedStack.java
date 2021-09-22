@@ -8,7 +8,7 @@ public class LinkedStack<T> implements Stack<T> {
 
 	private static class Node<E> {
 
-		private E data;
+		private final E data;
 
 		private Node<E> next;
 

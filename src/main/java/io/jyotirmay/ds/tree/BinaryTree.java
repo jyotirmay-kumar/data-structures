@@ -2,48 +2,84 @@ package io.jyotirmay.ds.tree;
 
 import java.io.Serializable;
 
-public class BinaryTree<T> implements Serializable {
+public class BinaryTree<E> implements Serializable {
 
-	private static final long serialVersionUID = 1077620956000198456L;
+	private static class Node<T> implements Serializable {
 
-	private static class Node<E> {
+		private T data;
 
-		private E data;
+		private Node<T> parent;
 
-		private Node<E> parent;
+		private Node<T> left;
 
-		private Node<E> leftChild;
+		private Node<T> right;
 
-		private Node<E> rightChild;
-
-		private Node(E data, Node<E> parent) {
+		private Node(T data){
 			this.data = data;
-			this.parent = parent;
 		}
-
 	}
 
 	private int size;
 
-	private Node<T> root;
+	private Node<E> root;
 
-	public boolean isEmpty() {
-		return size == 0;
-	}
-
-	public int size() {
+	public int size(){
 		return size;
 	}
 
-	public void addRoot(T data) {
-		if (!isEmpty())
-			throw new IllegalStateException("Tree is not empty");
+	public boolean isEmpty(){
+		return size == 0;
+	}
 
-		Node<T> node = new Node<>(data, null);
-		root = node;
+	public Node<E> addRoot(E data){
+		if(!isEmpty())
+			throw new IllegalStateException();
+		Node<E> newNode = new Node<>(data);
+		root = newNode;
 		size++;
 	}
-	
-	
+
+	public Node<E> addLeft(Node<E> node, E data){
+		if(null != node.left)
+			throw new IllegalStateException();
+		Node<E> newNode = new Node<>(data);
+		node.left = newNode;
+		size++;
+
+	}
+
+	public Node<E> addRight(Node<E> node, E data) {
+		if(null != node.right)
+			throw new IllegalStateException();
+		Node<E> newNode = new Node<>(data);
+		node.right = newNode;
+		size++;
+	}
+
+	public Node<E> getRoot(){
+		return root;
+	}
+
+	public Node<E> getLeft(Node<E> node){
+		return node.left;
+	}
+
+	public Node<E> getRight(Node<E> node){
+		return node.right;
+	}
+
+	public boolean isRoot(Node<E> node){
+		return node == root;
+	}
+
+	public boolean isInternal(Node<E> node){
+		return null == node.left ? null == node.right : false;
+	}
+
+	public E remove(Node<E> node){
+
+		return null;
+	}
+
 
 }

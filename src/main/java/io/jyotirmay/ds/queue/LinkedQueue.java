@@ -8,7 +8,7 @@ public class LinkedQueue<T> implements Queue<T> {
 
 	private static class Node<E> {
 
-		private E data;
+		private final E data;
 
 		private Node<E> next;
 
