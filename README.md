@@ -1,3 +1,7 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://app.travis-ci.com/jyotirmay-kumar/data-structures.svg?branch=main)](https://app.travis-ci.com/jyotirmay-kumar/data-structures)
+
+
 # Data-Structures
 Project to learn &amp; practice data structures in Java
 
