@@ -4,9 +4,13 @@ language: java
 
 jdk:
   - oraclejdk16
-
+env:
+  - CODECOV_TOKEN=2ad7abbd-61f0-42df-af1d-22e1ceb43a52
 cache:
   directories:
     - $HOME/.m2
 
 script: mvn clean install
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
