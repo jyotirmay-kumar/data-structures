@@ -1,11 +1,9 @@
-arch: amd64
-
 language: java
 
 jdk:
   - oraclejdk16
 env:
-  - CODECOV_TOKEN=2ad7abbd-61f0-42df-af1d-22e1ceb43a52
+  global: CODECOV_TOKEN=2ad7abbd-61f0-42df-af1d-22e1ceb43a52
 cache:
   directories:
     - $HOME/.m2
