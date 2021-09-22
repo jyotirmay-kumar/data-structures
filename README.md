@@ -4,7 +4,7 @@ Project to learn &amp; practice data structures in Java
 ___
 
 
-###Linked List
+### Linked List
 * Interface - ``LinkedList<T>``
 * Implementations - ``SinglyLinkedList<T>``, ``DoublyLinkedList<T>``
 ____
@@ -15,13 +15,13 @@ ____
 
 ----
 
-###Queue
+### Queue
 * Interface - ``Queue<T>``
 * Implementations - ``ArrayQueue<T>``, ``LinkedQueue<T>``
 
 ----
 
-###Tree
+### Tree
 * BinaryTree - ``BinaryTree<E>``
 
 
