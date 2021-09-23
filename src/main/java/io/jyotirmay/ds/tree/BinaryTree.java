@@ -70,7 +70,7 @@ public class BinaryTree<T> implements Serializable {
         if (node.data.compareTo(data) == 0)
             return true;
 
-        if (node.data.compareTo(data) < 0) {
+        if (node.data.compareTo(data) > 0) {
             if (node.left == null)
                 return false;
             return contains(node.left, data);
